@@ -18,6 +18,16 @@ Grüße, Florian
 `sort` Liste sortieren  
 `uniq` alle duplikate aus einer Liste entfernen  
 `wc -l` Zeilen zählen  
+## Bash
+`Strg + r` die letzten Befehle durchsuchen  
+`Alt + d` Wort löschen  
+`Strg + k` ab der Stelle den Rest ausschneiden  
+`Strg + y` an der Stelle das Kopierte einfügen  
+`Strg + a` zum Anfang  
+`Strg + e` zum Ende  
+## gzip / gunzip
+`gzip datei.txt` packt datei.txt nach datei.txt.gz  
+`gunzip datei.txt.gz` entpackt datei.txt.gz nach datei.txt
 ## less
 > damit geht wirklich jede Datei auf. Egal wie groß.
 
@@ -28,8 +38,9 @@ Grüße, Florian
 `/` suchen von oben nach unten  
 `?` suchen von unten nach oben  
 `n` next suchtreffer  
-`p` previous suchtreffer  
+`N` previous suchtreffer  
 `q` quit  
+ausserdem gibt es noch zless: öffnen von Dateien in *.gz Containern. Wichtig: Es darf kein tar drin sein.
 ## grep
 > ich kann dateien durchsuchen ohne sie zu öffnen. Das ist so krass
 
@@ -40,4 +51,6 @@ ausserdem gibt es noch egrep: Durchsuchen von Textdateien mit erweitertem Suchpa
 `tail -f datei.*` so kannst Du logs "folgen" und dem Programm bei der Arbeit zuschauen  
 `tail -n 10 datei.*` zeigt die letzten 10 Zeilen der Datei an. Kannst Du mit -f kombinieren  
 ## iconv
-`iconv -f ISO88592 -t UTF8 < input.txt > output.txt`  
+`iconv -f CP1252 -t UTF8 < input.txt > output.txt`  
+## history
+listet alle vergangenen Befehle von Dir auf.
